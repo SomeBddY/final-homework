@@ -5,11 +5,11 @@ Server will be on [http://localhost:3001](http://localhost:3001)
 
 # URL
 
-/albums/{id} - PATCH - example http://localhost:3001/albums/5 - "Content-Type": "application/json"
-/albums/{id} - DELETE
-/albums/{id} - GET
-/albums - POST - "Content-Type": "application/json"
-/albums - GET
+* /albums/{id} - PATCH - example http://localhost:3001/albums/5 - "Content-Type": "application/json"
+* /albums/{id} - DELETE
+* /albums/{id} - GET
+* /albums - POST - "Content-Type": "application/json"
+* /albums - GET
 
 # Tasks
 
