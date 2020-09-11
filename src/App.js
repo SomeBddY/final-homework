@@ -1,8 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import Albums from "./components/Albums";
+import AdminPanel from "./components/AdminPanel";
+
+const views = {
+  ALBUMS: "ALBUMS",
+  ADMIN: "ADMIN",
+};
 
 function App() {
-  return <div>Hello</div>;
+  const [view, setView] = useState(views.ALBUMS);
+
+  return (
+    <div>
+      <header>
+        <nav>
+          <button className="nav-button" onClick={() => setView(views.ALBUMS)}>
+            Albums
+          </button>
+          <button className="nav-button" onClick={() => setView(views.ADMIN)}>
+            Admin
+          </button>
+        </nav>
+      </header>
+      <main>
+        {view === views.ALBUMS && <Albums />}
+        {view === views.ADMIN && <AdminPanel />}
+      </main>
+    </div>
+  );
 }
 
 export default App;

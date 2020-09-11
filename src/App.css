@@ -1,0 +1,17 @@
+header {
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+.nav-button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #666666;
+  background-color: #f3f3f3;
+  padding: 15px;
+}
+
+.nav-button:hover {
+  background-color: #cccccc;
+}
