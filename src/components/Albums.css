@@ -1,3 +1,8 @@
+.album a {
+  text-decoration: none;
+  color: black;
+}
+
 .albums {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -6,6 +11,43 @@
 
 .album {
   border: 1px solid #e7e7e7;
+  cursor: pointer;
+}
+
+.single-album {
+  display: grid;
+  grid-template-columns: 100px 390px;
+  grid-gap: 10px;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.item {
+  padding: 5px;
+  color: #666666;
+  background-color: #dedcdc;
+}
+
+.single-album img {
+  max-height: 240px;
+}
+
+.single-album button {
+  padding: 15px 30px;
+  color: #666666;
+  background-color: #f3f3f3;
+  border: none;
+  cursor: pointer;
+}
+
+.single-album button:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.single-album img, button {
+  margin: auto;
+  grid-column: 1 / -1;
 }
 
 .image-container {

@@ -13,6 +13,6 @@ Server will be on [http://localhost:3001](http://localhost:3001)
 
 # Tasks
 
-1. Navigation button should have active indication based on page that is loaded
-2. When clicks on some album on Albums page it should be redirect to details Album page where the whole information about album is present and style with css
-3. On Admin panel add EDIT action, when the button is clicked should populate the form and on submit of the form the selected album should be edited.
+1. Navigation button should have active indication based on page that is loaded - DONE
+2. When clicks on some album on Albums page it should be redirect to details Album page where the whole information about album is present and style with css - DONE
+3. On Admin panel add EDIT action, when the button is clicked should populate the form and on submit of the form the selected album should be edited. - DONE

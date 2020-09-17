@@ -2,9 +2,9 @@
   "albums": [
     {
       "id": 1,
-      "title": "Ala bala",
-      "author": "Bala",
-      "image": "https://smile0n.com/wp-content/uploads/2016/08/ala-bala-batkata.jpg",
+      "title": "Ala Bala mi",
+      "author": "Dedoo",
+      "image": "https://picsum.photos/id/237/536/354",
       "songs": [
         "1asdassda",
         "2assdasd",
@@ -23,67 +23,22 @@
       ]
     },
     {
-      "id": 3,
-      "title": "Chalga",
-      "author": "Painer",
-      "image": "https://smile0n.com/wp-content/uploads/2016/08/ala-bala-batkata.jpg",
+      "title": " qwdwqdqwdqdwq dwqdqwd",
+      "author": "fwefewfe",
+      "image": "efwfwfew",
       "songs": [
-        "1asdassda",
-        "2assdasd",
-        "3aqweqweqweq"
-      ]
+        "wfewwf"
+      ],
+      "id": 3
     },
     {
-      "title": "New Album",
+      "title": "New Album ",
       "author": "Beyonce",
       "image": "https://static.billboard.com/files/media/Beyonce-Beyonce-greatest-album-covers-billboard-1000x1000-compressed.jpg",
-      "id": 4
-    },
-    {
-      "title": "qweqwe",
-      "author": "qeweq",
-      "image": "e",
-      "id": 6
-    },
-    {
-      "title": "qweqwe",
-      "author": "qeweq",
-      "image": "e",
-      "id": 7
-    },
-    {
-      "title": "qweqwe",
-      "author": "qeweq",
-      "image": "e",
-      "id": 8
-    },
-    {
-      "title": "test Title",
-      "author": "Some Author",
-      "image": "https://i.pinimg.com/originals/5e/9f/6c/5e9f6cf7fc503efe4ab6d4c1984cf326.jpg",
       "songs": [
-        "New Song"
-      ],
-      "id": 9
-    },
-    {
-      "title": "123",
-      "author": "another author",
-      "image": "https://static.billboard.com/files/media/Beyonce-Beyonce-greatest-album-covers-billboard-1000x1000-compressed.jpg",
-      "songs": [
-        "Single song"
-      ],
-      "id": 10
-    },
-    {
-      "title": "qweqwe",
-      "author": "qwewqe",
-      "image": "qweqwe",
-      "songs": [
-        "",
         ""
       ],
-      "id": 11
+      "id": 4
     }
   ]
 }

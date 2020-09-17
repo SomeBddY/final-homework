@@ -1,32 +1,52 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const AdminForm = ({ onSuccess }) => {
+const AdminForm = (props) => {
+  const [id, setId] = useState();
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [image, setImage] = useState("");
   const [songs, setSongs] = useState([""]);
 
+
   const onFormSubmit = (e) => {
     e.preventDefault();
-
-    fetch("http://localhost:3001/albums", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        title,
-        author,
-        image,
-        songs,
-      }),
-    }).then(() => {
-      onSuccess();
-      clearFormValues();
-    });
+    if(id !== undefined){
+      fetch(`http://localhost:3001/albums/${props.dataToForm.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          title,
+          author,
+          image,
+          songs,
+        }),
+      }).then(() => {
+        props.onSuccess();
+        clearFormValues();
+      });
+    } else {
+      fetch("http://localhost:3001/albums", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          title,
+          author,
+          image,
+          songs,
+        }),
+      }).then(() => {
+        props.onSuccess();
+        clearFormValues();
+      });
+    }
   };
 
   const clearFormValues = () => {
+    setId();
     setTitle("");
     setAuthor("");
     setImage("");
@@ -38,6 +58,17 @@ const AdminForm = ({ onSuccess }) => {
       songs.map((song, index) => (index === songIndex ? value : song))
     );
   };
+
+  useEffect(() => {
+    if(props.dataToForm.id !== undefined){
+      setId(props.dataToForm.id)
+      setTitle(props.dataToForm.title);
+      setAuthor(props.dataToForm.author);
+      setImage(props.dataToForm.image);
+      setSongs(props.dataToForm.songs);
+    }
+  }, [props.dataToForm.author, props.dataToForm.id, props.dataToForm.image, props.dataToForm.songs, props.dataToForm.title])
+
 
   const addSong = () => setSongs((songs) => [...songs, ""]);
 

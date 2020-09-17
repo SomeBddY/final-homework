@@ -12,6 +12,7 @@ header {
   padding: 15px;
 }
 
-.nav-button:hover {
+.active, .navButton:hover {
   background-color: #cccccc;
 }
+
